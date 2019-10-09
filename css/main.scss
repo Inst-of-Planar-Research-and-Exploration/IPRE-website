@@ -216,13 +216,19 @@ a {
 }
 
 .project {
-  background:
-    radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, $color_red-theme-light 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
-    radial-gradient(at 100% 100%,      #fff 9px, $color_red-theme-light 10px, #fff 11px),
-    $color_red-theme-light;
-  background-size: 20px 20px;
+  // background:
+  //   radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, $color_red-theme-light 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+  //   radial-gradient(at 100% 100%,      #fff 9px, $color_red-theme-light 10px, #fff 11px),
+  //   $color_red-theme-light;
+  // background-size: 20px 20px;
 
-  margin: 0 $margin_theme $margin_theme $margin_theme;
+  background:
+    linear-gradient(135deg, #fff 21px, $color_red-theme 11px, $color_red-theme 12px, transparent 12px, transparent 34px, $color_red-theme 34px, $color_red-theme 35px, transparent 35px),
+    linear-gradient(225deg, #fff 21px, $color_red-theme 11px, $color_red-theme 12px, transparent 12px, transparent 34px, $color_red-theme 34px, $color_red-theme 35px, transparent 35px)0 32px;
+  background-color:#fff;
+  background-size: 32px 64px;
+
+  margin: 0 $margin_theme 50px $margin_theme;
   padding: 40px;
 
   .project_title {
@@ -323,7 +329,7 @@ a {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 48em) and (max-width: 64em) and (orientation: landscape) {
 
   .project {
     .project_description {
@@ -344,7 +350,7 @@ a {
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 30em) and (max-width: 63em) {
   .text_header {
     font-size: $font-size_large;
   }
@@ -393,51 +399,7 @@ a {
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
-  .text_header {
-    font-size: $font-size_large;
-  }
-
-  .project {
-    padding: 20px;
-
-    .project_description {
-      padding: 10px;
-      width: 300px;
-    }
-  }
-
-  .pill_title {
-    font-size: $font-size_small;
-  }
-
-  #link_email,
-  #link_maxfun {
-    display: none;
-  }
-
-  #link_apply,
-  #link_team,
-  #link_about {
-    font-size: $font-size_small;
-    margin-right: 5px;
-  }
-
-  .container_home {
-    .home_title {
-      margin-top: 15px;
-      padding-bottom: 15px;
-      font-size: 30px;
-    }
-
-    .home_title-before {
-      margin-top: 15px;
-      font-size: $font-size_small;
-    }
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 3) and (max-device-width:1080px) {
+@media (min-width: 20em) and (max-width: 30em) {
   .text_header {
     font-size: $font-size_large;
   }
