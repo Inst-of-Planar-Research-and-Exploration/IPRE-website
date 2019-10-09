@@ -138,21 +138,40 @@ a {
 .container_home {
 
   color: #fff;
+  text-align: center;
 
   // Home page only
-  .pill_title {
-    font-size: $font-size_extra-large;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: $transition_link;
-  }
+  // .pill_title {
+  //   font-size: $font-size_extra-large;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   transition: $transition_link;
+  // }
 
   .home_title {
     text-shadow: $text-shadow_display;
     font-size: 80px;
+    margin-top: 30px;
+    padding-bottom: 30px;
   }
+
+  .home_title-before {
+    font-size: 30px;
+    font-family: $font-family_serif;
+    margin-top: 30px;
+    display: inline-block;
+  }
+
+  .project {
+    background: none;
+  }
+}
+
+.hero {
+  background: url('../assets/space.jpg') no-repeat;
+  background-size: cover;
 }
 
 .content_block {
@@ -193,6 +212,7 @@ a {
 .text_header {
   font-size: $font-size_extra-large;
   margin: 50px 20px;
+  color: $color_red-theme;
 }
 
 .project {
@@ -244,6 +264,10 @@ a {
     content: '* ';
     margin-left: -12px;
   }
+}
+
+.center {
+  text-align: center;
 }
 
 
@@ -344,7 +368,7 @@ a {
   }
 
   #link_apply,
-  #link_discuss,
+  #link_team,
   #link_about {
     font-size: $font-size_medium;
     margin-right: 20px;
@@ -353,6 +377,13 @@ a {
   .container_home {
     .home_title {
       font-size: 40px;
+      margin-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .home_title-before {
+      font-size: 20px;
+      margin-top: 15px;
     }
   }
 }
@@ -362,7 +393,7 @@ a {
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) and (-webkit-device-pixel-ratio:3) {
   .text_header {
     font-size: $font-size_large;
   }
@@ -386,7 +417,7 @@ a {
   }
 
   #link_apply,
-  #link_discuss,
+  #link_team,
   #link_about {
     font-size: $font-size_small;
     margin-right: 5px;
@@ -394,7 +425,14 @@ a {
 
   .container_home {
     .home_title {
+      margin-top: 15px;
+      padding-bottom: 15px;
       font-size: 30px;
+    }
+
+    .home_title-before {
+      margin-top: 15px;
+      font-size: $font-size_small;
     }
   }
 }
