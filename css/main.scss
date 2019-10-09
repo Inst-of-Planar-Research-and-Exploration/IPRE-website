@@ -42,7 +42,9 @@ body {
   margin: 0;
 
   &.home {
-    background-color: $color_red-theme;
+    background-color: $color_blue-dark;
+    background: url('../assets/space.jpg');
+    background-size: cover;
   }
 }
 
@@ -174,8 +176,6 @@ p {
 }
 
 .hero {
-  background: url('../assets/space.jpg') no-repeat;
-  background-size: cover;
 }
 
 .content_block {
@@ -364,7 +364,7 @@ p {
 
     .project_description {
       padding: 20px;
-      width: 400px;
+      width: 100%;
     }
   }
 
@@ -403,9 +403,7 @@ p {
   ##Screen = B/w 320px to 479px
 */
 
-@media  (min-width: 20em) and (max-width: 30em),
-        only screen and (-webkit-min-device-pixel-ratio: 2),
-    	  only screen and (min-resolution: 300dpi) {
+@media  (min-width: 20em) and (max-width: 30em) {
   .text_header {
     font-size: $font-size_large;
   }
@@ -415,52 +413,7 @@ p {
 
     .project_description {
       padding: 10px;
-      width: 300px;
-    }
-  }
-
-  .pill_title {
-    font-size: $font-size_small;
-  }
-
-  #link_email,
-  #link_maxfun {
-    display: none;
-  }
-
-  #link_apply,
-  #link_team,
-  #link_about {
-    font-size: $font-size_small;
-    margin-right: 5px;
-  }
-
-  .container_home {
-    .home_title {
-      margin-top: 15px;
-      padding-bottom: 15px;
-      font-size: 30px;
-    }
-
-    .home_title-before {
-      margin-top: 15px;
-      font-size: $font-size_small;
-    }
-  }
-}
-
-@media  only screen and (-webkit-min-device-pixel-ratio: 2),
-    	  only screen and (min-resolution: 300dpi) {
-  .text_header {
-    font-size: $font-size_large;
-  }
-
-  .project {
-    padding: 20px;
-
-    .project_description {
-      padding: 10px;
-      width: 300px;
+      width: 100%;
     }
   }
 
