@@ -400,7 +400,7 @@ a {
 */
 
 @media (min-width: 20em) and (max-width: 30em),
-      only screen and (-webkit-min-device-pixel-ratio: 3),
+      only screen and (-webkit-min-device-pixel-ratio: 2),
     	only screen and (min-resolution: 300dpi) {
   .text_header {
     font-size: $font-size_large;
