@@ -393,8 +393,51 @@ a {
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px),
-@media screen and (-webkit-device-pixel-ratio:3) {
+@media (min-width: 320px) and (max-width: 480px) {
+  .text_header {
+    font-size: $font-size_large;
+  }
+
+  .project {
+    padding: 20px;
+
+    .project_description {
+      padding: 10px;
+      width: 300px;
+    }
+  }
+
+  .pill_title {
+    font-size: $font-size_small;
+  }
+
+  #link_email,
+  #link_maxfun {
+    display: none;
+  }
+
+  #link_apply,
+  #link_team,
+  #link_about {
+    font-size: $font-size_small;
+    margin-right: 5px;
+  }
+
+  .container_home {
+    .home_title {
+      margin-top: 15px;
+      padding-bottom: 15px;
+      font-size: 30px;
+    }
+
+    .home_title-before {
+      margin-top: 15px;
+      font-size: $font-size_small;
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3) and (max-device-width:1920px) {
   .text_header {
     font-size: $font-size_large;
   }
