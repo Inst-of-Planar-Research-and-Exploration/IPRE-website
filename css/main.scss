@@ -13,7 +13,7 @@ $margin_theme: 4px;
 $height_nav-main: 83px;
 
 $font-family_serif: 'Droid Serif', Georgia, serif;
-$font-family_sans-serif: 'Expletus Sans', Helvetica, sans-serif;
+$font-family_header: 'Expletus Sans', Helvetica, sans-serif;
 $font-size_small: 18px;
 $font-size_medium: 24px;
 $font-size_large: 36px;
@@ -25,13 +25,16 @@ $speed_relaxed: 400ms;
 $transition_link: border-color $speed_quick ease;
 
 $border-width_pill: 4px;
-$box-shadow_pill: 6px 6px 0 0 $color_blue-dark;
+$box-shadow_large: 6px 6px 0 0 $color_blue-dark;
+$box-shadow_medium: 4px 4px 0 0 $color_blue-dark;
+$box-shadow_small: 4px 4px 0 0 $color_blue-dark;
+
 
 $text-shadow_display: 2px 2px 0 $color_blue-dark;
 
 // All pages
 html {
-  font-family: $font-family_sans-serif;
+  font-family: $font-family_header;
 }
 
 * {
@@ -111,7 +114,7 @@ nav.nav_main {
 }
 
 a {
-  font-family: $font-family_sans-serif;
+  font-family: $font-family_header;
   text-decoration: none;
   color: $color_blue-light;
   border-color: rgba(255,255,255,0); // added because transition on hover was transitioning from blue to gray
@@ -145,16 +148,7 @@ p {
 
   color: #fff;
   text-align: center;
-
-  // Home page only
-  // .pill_title {
-  //   font-size: $font-size_extra-large;
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  //   transition: $transition_link;
-  // }
+  margin-bottom: 50px;
 
   .home_title {
     text-shadow: $text-shadow_display;
@@ -180,7 +174,7 @@ p {
   background: #fff;
   border: 4px solid $color_blue-dark;
   padding: 20px 40px;
-  box-shadow: $box-shadow_pill;
+  box-shadow: $box-shadow_large;
   border-radius: 100px;
   display: inline-block;
   color: $color_blue-dark;
@@ -200,15 +194,14 @@ p {
   font-size: $font-size_extra-large;
   margin: 50px 20px;
   color: $color_red-theme;
+
+  &.text_header-home {
+    background-color: #fff;
+    display: block;
+  }
 }
 
 .content_block {
-  // background:
-  //   radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, $color_red-theme-light 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
-  //   radial-gradient(at 100% 100%,      #fff 9px, $color_red-theme-light 10px, #fff 11px),
-  //   $color_red-theme-light;
-  // background-size: 20px 20px;
-
   background:
     linear-gradient(135deg, #fff 21px, $color_red-theme 11px, $color_red-theme 12px, transparent 12px, transparent 34px, $color_red-theme 34px, $color_red-theme 35px, transparent 35px),
     linear-gradient(225deg, #fff 21px, $color_red-theme 11px, $color_red-theme 12px, transparent 12px, transparent 34px, $color_red-theme 34px, $color_red-theme 35px, transparent 35px)0 32px;
@@ -264,6 +257,89 @@ p {
 
 .center {
   text-align: center;
+}
+
+// POSTS
+
+.container_posts {
+
+  text-align: left;
+
+  .post {
+    border: 1px solid $color_blue-dark;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: $box-shadow_large;
+    margin-bottom: 20px;
+  }
+
+  .post-avatar {
+    width: 54px;
+    height: 54px;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    border: 2px solid $color_blue-dark;
+    box-shadow: $box-shadow_small;
+    border-radius: 10px;
+
+    &.davenport {
+      background-image: url(../assets/avatar_davenport.png);
+    }
+
+    &.lucretia {
+      background-image: url(../assets/avatar_lucretia.png);
+    }
+
+    &.taako {
+      background-image: url(../assets/avatar_taako.png);
+    }
+
+    &.lup {
+      background-image: url(../assets/avatar_lup.png);
+    }
+
+    &.barry {
+      background-image: url(../assets/avatar_barry.png);
+    }
+
+    &.merle {
+      background-image: url(../assets/avatar_merle.png);
+    }
+
+    &.magnus{
+      background-image: url(../assets/avatar_magnus.png);
+    }
+  }
+
+  .container_post-metadata {
+    display: inline-block;
+  }
+
+  .post-name {
+    display: inline-block;
+    font-size: $font-size_medium;
+    font-weight: 900;
+    font-family: $font-family_header;
+    color: $color_blue-dark;
+  }
+
+  .post-contact {
+    color: $color_gray-light;
+    display: block;
+  }
+
+  .post-body {
+
+  }
+
+  // .post-datetime {
+  //   color: $color_gray-light;
+  //   font-size: 14px;
+  //   font-style: italic;
+  // }
 }
 
 
