@@ -332,7 +332,9 @@ p {
   }
 
   .post-body {
-
+    & .emoji-large {
+      font-size: $font-size_extra-large;
+    }
   }
 
   // .post-datetime {
