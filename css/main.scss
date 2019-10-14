@@ -170,26 +170,9 @@ p {
     display: inline-block;
   }
 
-  .project {
+  .content_block {
     background: none;
   }
-}
-
-.hero {
-}
-
-.content_block {
-  transition: box-shadow $speed_quick ease;
-  display: block;
-
-  // &:hover, &:focus {
-  //   box-shadow: inset 0 9999px 0 0 transparentize($color_blue-light, .5);
-  //   border-bottom: none;
-  //
-  //   & .pill_title {
-  //     // border-color: $color_blue-light;
-  //   }
-  // }
 }
 
 .pill_title {
@@ -219,7 +202,7 @@ p {
   color: $color_red-theme;
 }
 
-.project {
+.content_block {
   // background:
   //   radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, $color_red-theme-light 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
   //   radial-gradient(at 100% 100%,      #fff 9px, $color_red-theme-light 10px, #fff 11px),
@@ -235,10 +218,13 @@ p {
   margin: 0 $margin_theme 50px $margin_theme;
   padding: 40px;
 
-  .project_title {
+  transition: box-shadow $speed_quick ease;
+  display: block;
+
+  .content_block_title {
   }
 
-  .project_description {
+  .content_block_description {
     margin: -30px auto 0 auto;
     color: #fff;
     background-color: $color_blue-dark;
@@ -281,7 +267,7 @@ p {
 }
 
 
-// MEDIA QUERIES
+// MEDIA QUERIES ===============================================================
 
 /*
   ##Device = Desktops
@@ -290,8 +276,8 @@ p {
 
 @media (min-width: 1281px) {
 
-  .project {
-    .project_description {
+  .content_block {
+    .content_block_description {
       padding: 40px;
       width: 900px;
     }
@@ -305,8 +291,8 @@ p {
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 
-  .project {
-    .project_description {
+  .content_block {
+    .content_block_description {
       padding: 40px;
       width: 600px;
     }
@@ -320,8 +306,8 @@ p {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  .project {
-    .project_description {
+  .content_block {
+    .content_block_description {
       padding: 30px;
       width: 500px;
     }
@@ -335,8 +321,8 @@ p {
 
 @media (min-width: 48em) and (max-width: 64em) and (orientation: landscape) {
 
-  .project {
-    .project_description {
+  .content_block {
+    .content_block_description {
       padding: 30px;
       width: 500px;
     }
@@ -359,10 +345,10 @@ p {
     font-size: $font-size_large;
   }
 
-  .project {
+  .content_block {
     padding: 20px;
 
-    .project_description {
+    .content_block_description {
       padding: 20px;
       width: 100%;
     }
@@ -408,10 +394,10 @@ p {
     font-size: $font-size_large;
   }
 
-  .project {
+  .content_block {
     padding: 20px;
 
-    .project_description {
+    .content_block_description {
       padding: 10px;
       width: 100%;
     }
