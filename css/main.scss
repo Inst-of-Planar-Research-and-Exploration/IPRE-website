@@ -364,7 +364,7 @@ p {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {
+@media only screen and (min-width: 1281px) {
 
   .content_block {
     .content_block_description {
@@ -379,7 +379,7 @@ p {
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 
   .content_block {
     .content_block_description {
@@ -394,7 +394,7 @@ p {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
   .content_block {
     .content_block_description {
@@ -409,7 +409,7 @@ p {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 48em) and (max-width: 64em) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
   .content_block {
     .content_block_description {
@@ -430,7 +430,7 @@ p {
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 30em) and (max-width: 63em) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
   .text_header {
     font-size: $font-size_large;
   }
@@ -479,7 +479,7 @@ p {
   ##Screen = B/w 320px to 479px
 */
 
-@media  (min-width: 20em) and (max-width: 30em) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   .text_header {
     font-size: $font-size_large;
   }
