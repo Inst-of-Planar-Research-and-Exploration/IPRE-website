@@ -167,6 +167,17 @@ p {
   .content_block {
     background: none;
   }
+
+  #countdown {
+    color: #fff;
+    text-shadow: $text-shadow_display;
+    font-family: $font-family_header;
+    font-size: $font-size-medium;
+
+    #countdown-timer {
+      font-weight: 900;
+    }
+  }
 }
 
 .pill_title {
@@ -309,7 +320,7 @@ p {
       background-image: url(../assets/avatar_merle.png);
     }
 
-    &.magnus{
+    &.magnus {
       background-image: url(../assets/avatar_magnus.png);
     }
   }
