@@ -208,8 +208,19 @@ p {
 
   &.text_header-home {
     background-color: #fff;
-    display: block;
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
   }
+}
+
+.text_header-link {
+  padding: 0 20px 10px 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: $font-size_medium;
+  background-color: #fff;
+  border-bottom: 4px solid transparent;
 }
 
 .content_block {
