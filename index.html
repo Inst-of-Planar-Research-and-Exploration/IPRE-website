@@ -236,7 +236,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "BYE, FELICIA";
+    document.getElementById("countdown").innerHTML = '<p id="countdown-timer">Mission launched! See you all soon!</p><p>While you wait for our return, <a href="/explore">Explore the planes in our interactive simulation!</a></p>';
   }
 }, 1000);
 </script>
